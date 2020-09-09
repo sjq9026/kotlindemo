@@ -14,5 +14,6 @@ class MainActivity : AppCompatActivity() {
             DataBindingUtil.setContentView(this, R.layout.activity_main)
         var userInfo = UserViewModel()
         binding.user = userInfo
+        //
     }
 }
