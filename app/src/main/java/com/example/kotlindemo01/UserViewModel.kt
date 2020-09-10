@@ -1,6 +1,5 @@
 package com.example.kotlindemo01
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
@@ -13,7 +12,10 @@ class UserViewModel : ViewModel() {
         user.value = value
     }
 
-    fun getValue(): UserInfo? {
-        return user.value
+    fun getValue(): MutableLiveData<UserInfo> {
+        if(user.value == null){
+            user.value = UserInfo()
+        }
+        return user
     }
 }
