@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">kotlindemo01</string>
+    <string name="usename">用户名</string>
+    <string name="pad">密  码</string>
+    <string name="login">登陆</string>
+
 </resources>
