@@ -3,5 +3,8 @@
     <string name="usename">用户名</string>
     <string name="pad">密  码</string>
     <string name="login">登陆</string>
+    <string name="query">查询</string>
+    <string name="insert">插入</string>
+    <string name="delete">删除</string>
 
 </resources>

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="user"
-            type="com.example.kotlindemo01.UserInfo" />
+            type="com.example.kotlindemo01.recycleview.UserInfo" />
 
     </data>
 

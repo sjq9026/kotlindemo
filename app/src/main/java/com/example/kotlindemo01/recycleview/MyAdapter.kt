@@ -1,10 +1,11 @@
-package com.example.kotlindemo01
+package com.example.kotlindemo01.recycleview
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlindemo01.R
 import com.example.kotlindemo01.databinding.RecyclerItemLayoutBinding
 
 class MyAdapter(private val context: Context, private val users: MutableList<UserInfo>) :

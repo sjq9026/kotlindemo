@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.example.kotlindemo01.databinding.ActivityMainBinding
+import com.example.kotlindemo01.recycleview.UserInfo
 
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +27,10 @@ class MainActivity : AppCompatActivity() {
         binding.user = userInfoVM
         //设置点击事件
         binding.button.setOnClickListener {
-            var u1 = UserInfo("张三", userInfoVM.getValue()?.value?.userAge?.plus(1))
+            var u1 = UserInfo(
+                "张三",
+                userInfoVM.getValue()?.value?.userAge?.plus(1)
+            )
             Log.i("TAG", u1.userAge?.toString())
             //数据变化自动更新
             userInfoVM.changeValue(u1)

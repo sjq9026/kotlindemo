@@ -1,17 +1,16 @@
-package com.example.kotlindemo01
+package com.example.kotlindemo01.timedemo
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.kotlindemo01.R
 import com.example.kotlindemo01.databinding.ActivityTimeBinding
-import java.lang.Exception
 import java.net.URL
 import java.net.URLConnection
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
-import java.util.logging.SimpleFormatter
 
 class TimeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
